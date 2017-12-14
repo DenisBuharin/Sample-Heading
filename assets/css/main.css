@@ -33,13 +33,14 @@ p {
 	border-radius: 5px;
 	box-shadow: 0 2px 3px #c0c0c0;
 	margin-top: 14px;
+	width: 100%;
 }	
 
 .header-nav li {
 	display: flex;
 	align-items: center;
-	height: 40px;
 	padding:  0 15px;
+	height: 40px;
 }
 
 .header-nav li a {
@@ -111,7 +112,7 @@ p {
 	margin-top: 33px;
 }
 
- .main-icon {
+.main-icon {
 	margin-right: 30px;
 }
 .block1 h3 {
@@ -124,14 +125,14 @@ p {
 	padding-bottom: 30px;
 }
 
-.main-blocks2-content {
+.main-blocks2-content,
+.main-blocks3-content  {
 	max-width: 540px;
-	padding-left: 35px;
 }
 
 .main-blocks2,
 .main-blocks3 {
-	justify-content: center;
+	justify-content: space-between;
 	margin-top: 25px;
 	padding-bottom: 25px;
 	border-bottom: 1px solid  #e7e7e7;
@@ -160,11 +161,6 @@ p {
 .main-blocks3-content .main-button {
 	margin-bottom: 20px;
 } 
-
-.main-blocks3-content {
-	max-width: 540px;
-	padding-right: 35px;
-}
 
 .main-blocks4 {
 	justify-content: center;
@@ -271,6 +267,18 @@ footer {
 		.footer-foto img{
 			width: 195px;
 			height: 84px;
-		}
-		
+		}	
+}
+
+@media screen and (max-width:406px) {
+			.footer-foto {
+			justify-content: center;
+		}	
+}
+
+@media screen and (max-width:1100px) {
+			.main-blocks2,
+			.main-blocks3 {
+			justify-content: center;
+		}	
 }
